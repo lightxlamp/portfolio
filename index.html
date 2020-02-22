@@ -14,15 +14,27 @@
   <body>
     <div id="headerWrapper">
       <div id="header">
-        <h2>
-          Hello my name is Stas <br />
-          I am a beginner in VueJS development.
-        </h2>
+        <h1>
+          Hello my name is Stanislav <br />
+          I am a beginner in VueJS development
+        </h1>
         <h2>Here is a list of my recent projects:</h2>
       </div>
     </div>
 
     <div id="sliderDivWrapper">
+      <div id="sliderProjectNameDiv">
+        <div class="projectName">
+          VueJS:
+          <a href="https://vue-ad-project-stas.firebaseapp.com"> E-Shop </a>
+        </div>
+
+        <div class="projectName">
+          NuxtJS / Socket.IO:
+          <a href="https://socket-io-nuxt-chat.herokuapp.com/"> Chat </a>
+        </div>
+      </div>
+
       <div id="sliderDiv">
         <div class=".multiple-items">
           <img src="img/vue_store_common.png" />
@@ -36,23 +48,21 @@
     <div id="slider-2-DivWrapper">
       <div id="slider-2-Div">
         <div class=".multiple-items">
-          Project on VueJS:
-          <a href="https://vue-ad-project-stas.firebaseapp.com"> E-Shop </a>
           <br />
           Keywords: VueJS, Firebase, Localization, Vuetify
           <br />
           Description: Simple version of e-shop where, users can place their
           ads, buy goods, edit their profiles
-
+          <br />
           <a href="https://github.com/lightxlamp/WebForMyself_VueJS_Course"
             >Source on Github</a
           >
         </div>
         <div class=".multiple-items">
-          Project on NuxtJS / Socket.IO:
-          <a href="https://socket-io-nuxt-chat.herokuapp.com/"> Chat </a>
           <br />
-          Keywords: NuxtJS, Express, Socket.IO Description: Simple chat. Users
+          Keywords: NuxtJS, Express, Socket.IO 
+          <br />
+          Description: Simple chat. Users
           can create a room and chat there
           <br />
           <a href="https://github.com/lightxlamp/VueJS_NuxtJS_SocketIO-Chat"
@@ -149,9 +159,9 @@
         $("#sliderDiv").slick({
           autoplay: true,
           autoplaySpeed: 7000,
-          asNavFor: "#slider-2-Div",
-          //dots: true,
-          fade: true,
+          asNavFor: "#slider-2-Div, #sliderProjectNameDiv",
+          // dots: true,
+          // fade: true,
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -167,10 +177,16 @@
             }
           ]
         }),
+          $("#sliderProjectNameDiv").slick({
+            asNavFor: "#sliderDiv, #slider-2-Div",
+            arrows: false,
+            infinite: true
+          }),
           $("#slider-2-Div").slick({
             dots: false,
             arrows: false,
-            asNavFor: "#sliderDiv"
+            infinite: true,
+            asNavFor: "#sliderDiv, #sliderProjectNameDiv"
           });
       });
     </script>
@@ -215,13 +231,26 @@
       height: 500px;
       margin: auto;
       /* overflow: hidden; */
+      /* border-top-left-radius: 50px;
+      border-top-right-radius: 50px; */
+    }
+
+    #sliderProjectNameDiv {
+      background-color: white;
+      /* padding: 10px; */
+      /* max-width: 460px;
+        max-height: 215px; */
+      max-width: 1320px;
+      height: 50px;
+      margin: auto;
+      /* overflow: hidden; */
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
     }
 
     #sliderDiv img {
-      border-top-left-radius: 40px;
-      border-top-right-radius: 40px;
+      /* border-top-left-radius: 40px;
+      border-top-right-radius: 40px; */
     }
 
     #slider-2-Div {
@@ -240,16 +269,38 @@
 
     #slider-2-Div a {
       color: #b19cd9;
+      text-decoration: none;
+    }
+
+    #sliderProjectNameDiv{
+      text-align: center;
+      background-color: black;
+      padding: 10px 0 0 20px;
+      color: white;
+    }
+
+    #sliderProjectNameDiv a {
+      color: #b19cd9;
+      text-decoration: none;
     }
 
     #descSlidersDiv {
       height: 100px;
     }
 
+    #headerWrapper{
+      background-color: white;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+
     #header {
       text-align: center;
-      max-width: 1320px;
-      margin: auto;
     }
+
+    .projectName{
+      font-size: 24px;
+    }
+
   </style>
 </html>
