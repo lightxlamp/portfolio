@@ -36,11 +36,14 @@
       </div>
 
       <div id="sliderDiv">
-        <div class=".multiple-items">
-          <img src="img/vue_store_common.png" />
+        <div
+          class=".multiple-items"
+          onclick="location.href='https://vue-ad-project-stas.firebaseapp.com';"
+        >
+          <img src="img/vue_store_common.png" alt="vue-js-store-image" />
         </div>
         <div class=".multiple-items">
-          <img src="img/RSFSide1.jpg" />
+          <img src="img/RSFSide1.jpg" alt="nuxt-socket-io-chat-image" />
         </div>
       </div>
     </div>
@@ -60,10 +63,9 @@
         </div>
         <div class=".multiple-items">
           <br />
-          Keywords: NuxtJS, Express, Socket.IO 
+          Keywords: NuxtJS, Express, Socket.IO
           <br />
-          Description: Simple chat. Users
-          can create a room and chat there
+          Description: Simple chat. Users can create a room and chat there
           <br />
           <a href="https://github.com/lightxlamp/VueJS_NuxtJS_SocketIO-Chat"
             >Source on Github</a
@@ -180,13 +182,15 @@
           $("#sliderProjectNameDiv").slick({
             asNavFor: "#sliderDiv, #slider-2-Div",
             arrows: false,
-            infinite: true
+            infinite: true,
+            fade: true
           }),
           $("#slider-2-Div").slick({
             dots: false,
             arrows: false,
             infinite: true,
-            asNavFor: "#sliderDiv, #sliderProjectNameDiv"
+            asNavFor: "#sliderDiv, #sliderProjectNameDiv",
+            fade: true
           });
       });
     </script>
@@ -228,6 +232,7 @@
       /* max-width: 460px;
         max-height: 215px; */
       max-width: 1320px;
+      min-width: 500px;
       height: 500px;
       margin: auto;
       /* overflow: hidden; */
@@ -246,6 +251,7 @@
       /* overflow: hidden; */
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
+      box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     #sliderDiv img {
@@ -256,7 +262,7 @@
     #slider-2-Div {
       text-align: center;
       background-color: black;
-      padding: 10px 0 0 20px;
+      padding: 5px 0 0 20px;
       color: white;
       /* max-width: 460px;
         max-height: 215px; */
@@ -265,6 +271,11 @@
       margin: auto;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #sliderDiv:hover{
+      cursor:pointer;
     }
 
     #slider-2-Div a {
@@ -272,7 +283,7 @@
       text-decoration: none;
     }
 
-    #sliderProjectNameDiv{
+    #sliderProjectNameDiv {
       text-align: center;
       background-color: black;
       padding: 10px 0 0 20px;
@@ -288,7 +299,7 @@
       height: 100px;
     }
 
-    #headerWrapper{
+    #headerWrapper {
       background-color: white;
       margin-bottom: 25px;
       margin-top: 25px;
@@ -298,9 +309,8 @@
       text-align: center;
     }
 
-    .projectName{
+    .projectName {
       font-size: 24px;
     }
-
   </style>
 </html>
