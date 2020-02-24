@@ -12,15 +12,15 @@
   </head>
 
   <body>
-    <div id="headerWrapper">
-      <div id="header">
+    <header>
+      <div id="headerContent">
         <h1>
           Hello my name is Stanislav <br />
           I am a beginner in VueJS development
         </h1>
         <h2>Here is a list of my recent projects:</h2>
       </div>
-    </div>
+    </header>
 
     <div id="sliderDivWrapper">
       <div id="sliderProjectNameDiv">
@@ -33,95 +33,116 @@
           NuxtJS / Socket.IO:
           <a href="https://socket-io-nuxt-chat.herokuapp.com/"> Chat </a>
         </div>
+
+        <div class="projectName">
+          Node JS / Express:
+          <a href="https://desolate-fortress-70630.herokuapp.com">
+            Weather App
+          </a>
+        </div>
+
+        <div class="projectName">
+          Vanilla JS:
+          <a href="https://question-js-proj.web.app/"> Question platform </a>
+        </div>
       </div>
 
       <div id="sliderDiv">
-        <div
+        <figure
           class=".multiple-items"
           onclick="location.href='https://vue-ad-project-stas.firebaseapp.com';"
         >
-          <img src="img/vue_store_common.png" alt="vue-js-store-image" />
-        </div>
-        <div class=".multiple-items">
-          <img src="img/RSFSide1.jpg" alt="nuxt-socket-io-chat-image" />
-        </div>
+          <img
+            src="img/vue_store_common.png"
+            alt="Fig.1 - Simple store project on VueJS"
+          />
+        </figure>
+
+        <figure
+          class=".multiple-items"
+          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+        >
+          <img
+            src="img/RSFSide1.jpg"
+            alt="Fig.2 - Chat project on NuxtJS and SocketIO"
+          />
+        </figure>
+
+        <figure
+          class=".multiple-items"
+          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+        >
+          <img
+            src="img/20190614_Stuttgart_PS5_2122-e1562081370673-1300x487.jpg"
+            alt="Fig.3 - Weather Service - on Node JS / Express:"
+          />
+        </figure>
+
+        <figure
+          class=".multiple-items"
+          onclick="location.href='https://question-js-proj.web.app/';"
+        >
+          <img
+            src="img/consulart-1300x487.jpg"
+            alt="Fig.4 - Question platform on Vanilla JS"
+          />
+        </figure>
       </div>
     </div>
 
     <div id="slider-2-DivWrapper">
       <div id="slider-2-Div">
         <div class=".multiple-items">
-          <br />
-          Keywords: VueJS, Firebase, Localization, Vuetify
-          <br />
-          Description: Simple version of e-shop where, users can place their
-          ads, buy goods, edit their profiles
-          <br />
+          <p>Keywords: VueJS, Firebase, Localization, Vuetify</p>
+
+          <p>
+            Description: Simple version of e-shop where, users can place their
+            ads, buy goods, edit their profiles
+          </p>
+
           <a href="https://github.com/lightxlamp/WebForMyself_VueJS_Course"
             >Source on Github</a
           >
         </div>
         <div class=".multiple-items">
-          <br />
-          Keywords: NuxtJS, Express, Socket.IO
-          <br />
-          Description: Simple chat. Users can create a room and chat there
-          <br />
+          <p>Keywords: NuxtJS, Express, Socket.IO</p>
+
+          <p>
+            Description: Simple chat. Users can create a room and chat there
+          </p>
+
           <a href="https://github.com/lightxlamp/VueJS_NuxtJS_SocketIO-Chat"
+            >Source on Github</a
+          >
+        </div>
+        <div class=".multiple-items">
+          <p>Keywords: NodeJS, Express, EJS, API Requests</p>
+          <p>Description: User can check weather in any city</p>
+          <a
+            href="https://github.com/lightxlamp/NodeJS_First_Project-Weather_API"
+            >Source on Github</a
+          >
+        </div>
+        <div class=".multiple-items">
+          <p>
+            Keywords: Vanilla JS, Local Storage, MUI CSS, Firebase DB / Hosting
+          </p>
+          <p>
+            Description: User can leave his/her/their question and see questions
+            of other users
+          </p>
+          <a
+            href="https://github.com/lightxlamp/JavaScript_learning_and_practicing/tree/master/Project-on-vanilla-js"
             >Source on Github</a
           >
         </div>
       </div>
     </div>
 
+    <footer><p>Handcrafted by me © lightxlamp</p></footer>
+
     <!-- <ul>
-      <li>
-        Project on VueJS:
-        <a href="https://vue-ad-project-stas.firebaseapp.com"> E-Shop </a>
-        <ul>
-          <li>Keywords: VueJS, Firebase, Localization, Vuetify</li>
-          <li>
-            Description: Simple version of e-shop where, users can place their
-            ads, buy goods, edit their profiles
-          </li>
-          <li>
-            <a href="https://github.com/lightxlamp/WebForMyself_VueJS_Course"
-              >Source on Github</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li>
-        Project on NuxtJS / Socket.IO:
-        <a href="https://socket-io-nuxt-chat.herokuapp.com/"> Chat </a>
-        <ul>
-          <li>Keywords: NuxtJS, Express, Socket.IO</li>
-          <li>
-            Description: Simple chat. Users can create a room and chat there
-          </li>
-          <li>
-            <a href="https://github.com/lightxlamp/VueJS_NuxtJS_SocketIO-Chat"
-              >Source on Github</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li>
-        Project on Node JS / Express:
-        <a href="https://desolate-fortress-70630.herokuapp.com">
-          Weather App
-        </a>
-        <ul>
-          <li>Keywords: NodeJS, Express, EJS, API Requests</li>
-          <li>Description: User can check weather in any city</li>
-          <li>
-            <a
-              href="https://github.com/lightxlamp/NodeJS_First_Project-Weather_API"
-              >Source on Github</a
-            >
-          </li>
-        </ul>
-      </li>
+
       <li>
         Project on Vanilla JS:
         <a href="https://question-js-proj.web.app/"> Question platform </a>
@@ -142,12 +163,7 @@
         </ul>
       </li>
     </ul>
-    <div id="purposeOfthisPage">
-      <p>
-        * This page was created to test GitHub pages and also to list all my
-        recent projects
-      </p>
-    </div> -->
+ -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
@@ -252,13 +268,14 @@
       /* overflow: hidden; */
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
-      box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     #slider-2-Div {
       text-align: center;
       background-color: black;
-      padding: 5px 0 0 20px;
+      padding: 20px 0 0 20px;
       color: white;
       /* max-width: 460px;
         max-height: 215px; */
@@ -267,16 +284,19 @@
       margin: auto;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    #sliderDiv:hover{
-      cursor:pointer;
+    #sliderDiv:hover {
+      cursor: pointer;
     }
 
     #slider-2-Div a {
       color: #b19cd9;
       text-decoration: none;
+      display: block;
+      padding-top: 5px;
     }
 
     #sliderProjectNameDiv {
@@ -295,13 +315,18 @@
       height: 100px;
     }
 
-    #headerWrapper {
+    header {
       background-color: white;
       margin-bottom: 25px;
       margin-top: 25px;
     }
 
-    #header {
+    footer {
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    #headerContent {
       text-align: center;
     }
 
