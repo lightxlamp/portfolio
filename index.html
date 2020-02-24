@@ -20,6 +20,14 @@
       </div>
     </header>
 
+    <div id="my-flex-container">
+      <div class="flex-test-1">212</div>
+      <div class="flex-test-2">
+
+        
+      </div>
+      <div class="flex-test-3">212</div>
+    </div>
     <div id="sliderDivWrapper">
       <div id="sliderProjectNameDiv">
         <div class="projectName">
@@ -199,6 +207,16 @@
       font-size: 1rem;
       background-color: white;
     }
+
+    #my-flex-container {
+      display: grid;
+      grid-template-columns: 13% 74% 13%;
+    }
+
+    #my-flex-container > div {
+      border: 1px solid grey;
+    }
+
     #purposeOfthisPage {
       color: yellow;
       font-size: 14px;
@@ -221,7 +239,6 @@
     #sliderDiv {
       background-color: white;
       max-width: 1320px;
-      min-width: 500px;
       height: 500px;
       margin: auto;
     }
