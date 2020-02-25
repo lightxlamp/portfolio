@@ -199,7 +199,8 @@
         $("#images-slider-div").slick({
           autoplay: true,
           autoplaySpeed: 10000,
-          asNavFor: "#project-details-slider-div, #project-name-slider-div, #technologies-slider-div",
+          asNavFor:
+            "#project-details-slider-div, #project-name-slider-div, #technologies-slider-div",
           // dots: true,
           // fade: true,
           infinite: true,
@@ -207,7 +208,8 @@
           slidesToScroll: 1
         }),
           $("#project-name-slider-div").slick({
-            asNavFor: "#images-slider-div, #project-details-slider-div, #technologies-slider-div",
+            asNavFor:
+              "#images-slider-div, #project-details-slider-div, #technologies-slider-div",
             autoplay: true,
             autoplaySpeed: 10000,
             arrows: false,
@@ -220,7 +222,8 @@
             dots: false,
             arrows: false,
             infinite: true,
-            asNavFor: "#images-slider-div, #project-name-slider-div, #technologies-slider-div",
+            asNavFor:
+              "#images-slider-div, #project-name-slider-div, #technologies-slider-div",
             fade: true
           }),
           $("#technologies-slider-div").slick({
@@ -233,6 +236,8 @@
       });
     </script>
   </body>
+  
+  <!-- https://www.codebeautifier.com/ applied for CSS -->
   <style>
     * {
       margin: 0;
@@ -246,63 +251,58 @@
     }
 
     body {
+      background-color: white;
       font-family: Arial;
       font-size: 1em;
-      background-color: white;
     }
 
     #three-sliders-div-wrapper {
-      width: 100%;
       background-color: #7510f7;
-    }
-
-    #three-sliders-div-wrapper {
-      padding: 2em 0 2em 0;
+      padding: 2em 0;
+      width: 100%;
     }
 
     #project-name-slider-div {
-      padding: 0.8em 0 0.8em 0px;
-      color: white;
-      text-align: center;
       background-color: black;
-      width: 71%;
-      max-width: 2905px;
-      margin: auto;
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
       box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      color: white;
+      margin: auto;
+      max-width: 2905px;
+      padding: 0.8em 0;
+      text-align: center;
+      width: 71%;
     }
 
     #images-slider-div {
       background-color: black;
       border: 0.1em solid black;
+      margin: auto;
       max-width: 2905px;
       width: 71%;
-      /* height: 500px; */
-      margin: auto;
     }
 
     #project-details-slider-div {
-      text-align: center;
-      font-size: 1.2em;
       background-color: black;
-      padding: 1em 0 1em 0;
-      color: white;
-      width: 71%;
-      max-width: 2905px;
-      /* height: 100px; */
-      margin: auto;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      color: white;
+      font-size: 1.2em;
+      margin: auto;
+      max-width: 2905px;
+      padding: 1em 0;
+      text-align: center;
+      width: 71%;
     }
 
     #project-details-slider-div a {
       color: #b19cd9;
-      text-decoration: none;
       display: block;
+      text-decoration: none;
     }
 
     #images-slider-div:hover {
@@ -315,27 +315,21 @@
     }
 
     #technologies-slider-wrapper-div {
-      width: 100%;
       background-color: white;
+      width: 100%;
     }
 
     #technologies-slider-div {
       background-color: white;
+      margin: auto;
       max-width: 2905px;
       width: 51%;
-      /* height: 500px; */
-      /* border: 1px solid black; */
-      margin: auto;
     }
 
-    /* #technologies-slider-div > div {
-     
-    } */
-
     footer {
-      text-align: center;
-      padding-top: 2rem;
       font-size: 1.2rem;
+      padding-top: 2rem;
+      text-align: center;
     }
 
     #headerContent {
