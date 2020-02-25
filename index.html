@@ -152,7 +152,7 @@
       $(document).ready(function() {
         $("#images-slider-div").slick({
           autoplay: false,
-          autoplaySpeed: 7000,
+          autoplaySpeed: 10000,
           asNavFor: "#project-details-slider-div, #project-name-slider-div",
           // dots: true,
           // fade: true,
@@ -163,14 +163,14 @@
           $("#project-name-slider-div").slick({
             asNavFor: "#images-slider-div, #project-details-slider-div",
             autoplay: false,
-            autoplaySpeed: 7000,
+            autoplaySpeed: 10000,
             arrows: false,
             infinite: true,
             fade: true
           }),
           $("#project-details-slider-div").slick({
             autoplay: false,
-            autoplaySpeed: 7000,
+            autoplaySpeed: 10000,
             dots: false,
             arrows: false,
             infinite: true,
@@ -188,13 +188,13 @@
 
     header {
       background-color: white;
-      margin-bottom: 25px;
-      margin-top: 25px;
+      margin-bottom: 2em;
+      margin-top: 2em;
     }
 
     body {
       font-family: Arial;
-      font-size: 1rem;
+      font-size: 1em;
       background-color: white;
     }
 
@@ -204,7 +204,7 @@
     }
 
     #three-sliders-div-wrapper {
-      padding: 25px 0 25px 0;
+      padding: 2em 0 2em 0;
     }
 
     #project-name-slider-div {
@@ -213,6 +213,7 @@
       text-align: center;
       background-color: black;
       width: 71%;
+      max-width: 2905px;
       margin: auto;
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
@@ -223,18 +224,20 @@
     #images-slider-div {
       background-color: black;
       border: 0.1em solid black;
-      /* max-width: 1320px; */
-      max-width: 71%;
+      max-width: 2905px;
+      width: 71%;
       /* height: 500px; */
       margin: auto;
     }
 
     #project-details-slider-div {
       text-align: center;
+      font-size: 1.2em;
       background-color: black;
-      padding: 0px 0 15px 0px;
+      padding: 1em 0 1em 0;
       color: white;
-      max-width: 71%;
+      width: 71%;
+      max-width: 2905px;
       /* height: 100px; */
       margin: auto;
       border-bottom-left-radius: 50px;
