@@ -50,7 +50,7 @@
       </div>
 
       <div id="images-slider-div">
-        <figure
+        <div
           class=".multiple-items"
           onclick="location.href='https://vue-ad-project-stas.firebaseapp.com';"
         >
@@ -58,9 +58,9 @@
             src="img/VueStore.jpg"
             alt="Fig.1 - Simple store project on VueJS"
           />
-        </figure>
+        </div>
 
-        <figure
+        <div
           class=".multiple-items"
           onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
         >
@@ -68,9 +68,9 @@
             src="img/RSFSide1.jpg"
             alt="Fig.2 - Chat project on NuxtJS and SocketIO"
           />
-        </figure>
+        </div>
 
-        <figure
+        <div
           class=".multiple-items"
           onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
         >
@@ -78,9 +78,9 @@
             src="img/20190614_Stuttgart_PS5_2122-e1562081370673-1300x487.jpg"
             alt="Fig.3 - Weather Service - on Node JS / Express:"
           />
-        </figure>
+        </div>
 
-        <figure
+        <div
           class=".multiple-items"
           onclick="location.href='https://question-js-proj.web.app/';"
         >
@@ -88,7 +88,7 @@
             src="img/consulart-1300x487.jpg"
             alt="Fig.4 - Question platform on Vanilla JS"
           />
-        </figure>
+        </div>
       </div>
 
       <div id="project-details-slider-div">
@@ -208,11 +208,11 @@
     }
 
     #project-name-slider-div {
-      padding: 10px 0 0 20px;
+      padding: 0.8em 0 0.8em 0px;
       color: white;
       text-align: center;
       background-color: black;
-      max-width: 1320px;
+      width: 71%;
       margin: auto;
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
@@ -222,7 +222,9 @@
 
     #images-slider-div {
       background-color: black;
-      max-width: 1320px;
+      border: 0.1em solid black;
+      /* max-width: 1320px; */
+      max-width: 71%;
       /* height: 500px; */
       margin: auto;
     }
@@ -232,7 +234,7 @@
       background-color: black;
       padding: 0px 0 15px 0px;
       color: white;
-      max-width: 1320px;
+      max-width: 71%;
       /* height: 100px; */
       margin: auto;
       border-bottom-left-radius: 50px;
@@ -266,9 +268,7 @@
     }
 
     .project-name {
-      font-size: 24px;
+      font-size: 2em;
     }
-
-
   </style>
 </html>
