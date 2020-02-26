@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Front-end Developer">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>List of projects</title>
+    <title>Stanislav Sheveliukhin | Front-end Developer</title>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link
@@ -143,49 +144,63 @@
       <div id="technologies-slider-div">
         <div
           class=".multiple-items"
-          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+          onclick="location.href='https://www.heroku.com';"
         >
           <img src="img/heroku-vector-logo.png" alt="Heroku Logo" />
         </div>
 
         <div
           class=".multiple-items"
-          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+          onclick="location.href='https://vuejs.org';"
         >
-          <img src="img/vue-logo-image.svg" alt="VueJS logo" />
+          <img src="img/vue-js.png" alt="VueJS logo" />
         </div>
 
         <div
           class=".multiple-items"
-          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+          onclick="location.href='https://firebase.google.com';"
         >
           <img src="img/firebase.png" alt="Firebase logo" />
         </div>
 
         <div
           class=".multiple-items"
-          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+          onclick="location.href='https://nodejs.org/en/';"
         >
           <img src="img/node_js.png" alt="NodeJS logo" />
         </div>
 
         <div
           class=".multiple-items"
-          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+          onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/JavaScript';"
         >
           <img src="img/js_logo.jpg" alt="Java Script logo" />
         </div>
 
         <div
           class=".multiple-items"
-          onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+          onclick="location.href='https://socket.io';"
         >
           <img src="img/socket_io.jpg" alt="SocketIO logo" />
+        </div>    
+        
+        <div
+          class=".multiple-items"
+          onclick="location.href='https://nuxtjs.org';"
+        >
+          <img src="img/nuxt_js.png" alt="SocketIO logo" />
+        </div>        
+        
+        <div
+          class=".multiple-items"
+          onclick="location.href='https://vuetifyjs.com/en/';"
+        >
+          <img src="img/vuetify.png" alt="Vuetify logo" />
         </div>
       </div>
     </div>
 
-    <footer><p>Handcrafted by me © lightxlamp</p></footer>
+    <footer><p>© 2020 Stanislav Sheveliukhin</p></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
@@ -200,7 +215,7 @@
           autoplay: true,
           autoplaySpeed: 10000,
           asNavFor:
-            "#project-details-slider-div, #project-name-slider-div, #technologies-slider-div",
+            "#project-details-slider-div, #project-name-slider-div",
           // dots: true,
           // fade: true,
           infinite: true,
@@ -209,7 +224,7 @@
         }),
           $("#project-name-slider-div").slick({
             asNavFor:
-              "#images-slider-div, #project-details-slider-div, #technologies-slider-div",
+              "#images-slider-div, #project-details-slider-div",
             autoplay: true,
             autoplaySpeed: 10000,
             arrows: false,
@@ -223,15 +238,15 @@
             arrows: false,
             infinite: true,
             asNavFor:
-              "#images-slider-div, #project-name-slider-div, #technologies-slider-div",
+              "#images-slider-div, #project-name-slider-div",
             fade: true
           }),
           $("#technologies-slider-div").slick({
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 2000,
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToScroll: 1
           });
       });
     </script>
@@ -273,7 +288,7 @@
       max-width: 2905px;
       padding: 0.8em 0;
       text-align: center;
-      width: 71%;
+      width: 85%;
     }
 
     #images-slider-div {
@@ -281,7 +296,7 @@
       border: 0.1em solid black;
       margin: auto;
       max-width: 2905px;
-      width: 71%;
+      width: 85%;
     }
 
     #project-details-slider-div {
@@ -296,7 +311,7 @@
       max-width: 2905px;
       padding: 1em 0;
       text-align: center;
-      width: 71%;
+      width: 85%;
     }
 
     #project-details-slider-div a {
@@ -316,6 +331,7 @@
 
     #technologies-slider-wrapper-div {
       background-color: white;
+      margin: 2rem 0 1rem 0;
       width: 100%;
     }
 
