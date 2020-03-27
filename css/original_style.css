@@ -1,0 +1,107 @@
+/* https://www.codebeautifier.com/ applied to CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+body {
+    background-color: white;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+#three-sliders-div-wrapper {
+    background-color: #7510f7;
+    padding: 2em 0;
+    width: 100%;
+}
+
+#project-name-slider-div {
+    background-color: black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    margin: auto;
+    max-width: 2905px;
+    padding: 0.8em 0;
+    text-align: center;
+    width: 85%;
+}
+
+#images-slider-div {
+    background-color: black;
+    border: 0.1em solid black;
+    margin: auto;
+    max-width: 2905px;
+    width: 85%;
+}
+
+#project-details-slider-div {
+    background-color: black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    font-size: 1.2em;
+    margin: auto;
+    max-width: 2905px;
+    padding: 1em 0;
+    text-align: center;
+    width: 85%;
+}
+
+#project-details-slider-div a {
+    color: #b19cd9;
+    display: block;
+    text-decoration: none;
+}
+
+#images-slider-div:hover {
+    cursor: pointer;
+}
+
+#project-name-slider-div a {
+    color: #b19cd9;
+    text-decoration: none;
+}
+
+#technologies-slider-wrapper-div {
+    background-color: white;
+    margin: 2rem 0 1rem 0;
+    width: 100%;
+}
+
+#technologies-slider-div {
+    background-color: white;
+    margin: auto;
+    max-width: 2905px;
+    width: 51%;
+}
+
+#technologies-slider-div:hover {
+    cursor: pointer;
+}
+
+footer {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#headerContent {
+    text-align: center;
+}
+
+.project-name {
+    font-size: 2em;
+}
