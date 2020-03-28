@@ -51,7 +51,7 @@ body{
     //background-color: grey;
     display: grid;
 
-    grid-template-rows: [header-start] 300px [header-end projects-start] 600px [projects-end technologies-start] 300px [technologies-end footer-start]
+    grid-template-rows: [header-start] 300px [header-end projects-start] min-content [projects-end technologies-start] 300px [technologies-end footer-start]
                         200px [footer-end];  
     grid-template-columns: [left-space-start] 1fr [left-space-end main-start] 1100px [main-end right-space-start] 1fr [right-space-end]; 
 

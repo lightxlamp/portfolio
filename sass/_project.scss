@@ -1,0 +1,60 @@
+.project {
+    background-color: $color-primary;
+    grid-row: projects-start / projects-end;
+    grid-column: left-space-start / right-space-end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__name {
+        background-color: black;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: #fff;
+        //max-width: 2905px;
+        //padding: 0.8em 0;
+        text-align: center;
+        width: 85%;
+    }
+
+    &__name a {
+        color: #b19cd9;
+        text-decoration: none;
+    }
+
+    &__image {
+        background-color: black;
+        border: 0.1em solid black;
+        margin: auto;
+        max-width: 2905px;
+        width: 85%;
+    }
+
+    &__image:hover {
+        cursor: pointer;
+    }
+
+    &__details {
+        background-color: black;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+        font-size: 1.2em;
+        margin: auto;
+        max-width: 2905px;
+        padding: 1em 0;
+        text-align: center;
+        width: 85%;
+    }
+    
+    &__details a {
+        color: $color-primary-light;
+        display: block;
+        text-decoration: none;
+    }
+}

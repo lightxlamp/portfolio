@@ -32,8 +32,144 @@
       </h1>
     </header>
 
-    <section class="projects">
-        Prj
+    <section class="project">
+        <div class="project__name">
+            <div class="project-name">
+                <a href="https://vue-ad-project-stas.firebaseapp.com">E-Shop</a>
+                : VueJS
+            </div>
+
+            <div class="project-name">
+                <a href="https://socket-io-nuxt-chat.herokuapp.com/"> Chat App </a>
+                : NuxtJS / Socket.IO
+            </div>
+
+            <div class="project-name">
+                <a href="https://algo-ready.firebaseapp.com">
+                    Customizing Vuetify Dark theme
+                </a>
+                : Vue JS / Vuetify
+            </div> 
+            
+            <div class="project-name">
+                <a href="https://desolate-fortress-70630.herokuapp.com">
+                    Weather App
+                </a>
+                : Node JS / Express
+            </div>
+
+            <div class="project-name">
+                <a href="https://question-js-proj.web.app/"> Question platform </a>
+                : Vanilla JS
+            </div>
+        </div>
+
+        <div class="project__image">
+            <div
+            class=".multiple-items"
+            onclick="location.href='https://vue-ad-project-stas.firebaseapp.com';"
+            >
+            <img
+                src="img/VueStore.png"
+                alt="Fig.1 - Simple store project on VueJS"
+            />
+            </div>
+
+            <div
+            class=".multiple-items"
+            onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+            >
+            <img
+                src="img/chat.png"
+                alt="Fig.2 - Chat project on NuxtJS and SocketIO"
+            />
+            </div>
+
+            <div
+            class=".multiple-items"
+            onclick="location.href='https://algo-ready.firebaseapp.com';"
+            >
+            <img
+                src="img/algo-ready.png"
+                alt="Fig.3 - Vuetify custom theme"
+            />
+            </div>       
+            
+            <div
+            class=".multiple-items"
+            onclick="location.href='https://socket-io-nuxt-chat.herokuapp.com/';"
+            >
+            <img
+                src="img/weather.png"
+                alt="Fig.4 - Weather Service - on Node JS / Express:"
+            />
+            </div>
+
+            <div
+            class=".multiple-items"
+            onclick="location.href='https://question-js-proj.web.app/';"
+            >
+            <img
+                src="img/questions_vanilla.png"
+                alt="Fig.5 - Question platform on Vanilla JS"
+            />
+            </div>
+        </div>
+
+        <div class="project__details">
+            <div class=".multiple-items">
+            <p>Keywords: VueJS, Firebase, Localization, Vuetify</p>
+
+            <p>
+                Description: Simple version of e-shop where, users can place their
+                ads, buy goods, edit their profiles
+            </p>
+
+            <a href="https://github.com/lightxlamp/WebForMyself_VueJS_Course"
+                >View on Github</a
+            >
+            </div>
+            <div class=".multiple-items">
+            <p>Keywords: NuxtJS, Express, Socket.IO</p>
+
+            <p>
+                Description: Simple chat. Users can create a room and chat there
+            </p>
+
+            <a href="https://github.com/lightxlamp/VueJS_NuxtJS_SocketIO-Chat"
+                >View on Github</a
+            >
+            </div>
+            <div class=".multiple-items">
+            <p>Keywords: VueJS, Vuetify, Chart.JS</p>
+            <p>Description: Customizing Vuetify dark theme</p>
+            <a
+                href="https://github.com/lightxlamp/JavaScript_learning_and_practicing/tree/master/AlgoReady_VueJS_Vuetify_Design/algo-ready-app"
+                >View on Github</a
+            >
+            </div>        
+            <div class=".multiple-items">
+            <p>Keywords: NodeJS, Express, EJS, API Requests</p>
+            <p>Description: User can check weather in any city</p>
+            <a
+                href="https://github.com/lightxlamp/NodeJS_First_Project-Weather_API"
+                >View on Github</a
+            >
+            </div>
+            <div class=".multiple-items">
+            <p>
+                Keywords: Vanilla JS, Local Storage, MUI CSS, Firebase DB / Hosting
+            </p>
+            <p>
+                Description: User can leave his/her/their question and see questions
+                of other users
+            </p>
+            <a
+                href="https://github.com/lightxlamp/JavaScript_learning_and_practicing/tree/master/Project-on-vanilla-js"
+                >View on Github</a
+            >
+            </div>
+        </div>
     </section> 
     
     <section class="technologies">
@@ -45,6 +181,58 @@
             &copy; Copyright 2020 LLI
         </p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".project__image").slick({
+          autoplay: true,
+          autoplaySpeed: 10000,
+          asNavFor:
+            ".project__details, ", //.project__name
+          // dots: true,
+          // fade: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }),
+
+        // $(".project__name").slick({
+        //     asNavFor:
+        //       ".project__image, .project__details",
+        //     autoplay: true,
+        //     autoplaySpeed: 10000,
+        //     arrows: false,
+        //     infinite: true,
+        //     fade: true
+        // }),
+
+        $(".project__details").slick({
+            autoplay: true,
+            autoplaySpeed: 10000,
+            dots: false,
+            arrows: false,
+            infinite: true,
+            asNavFor:
+              ".project__image, ", //.project__name
+            fade: true 
+        }),
+
+        $("#technologies-slider-div").slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
+      });
+    </script>
 
   </body>
 </html>
