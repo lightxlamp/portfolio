@@ -1,0 +1,101 @@
+.header {
+    background-color: #fff;
+    border: 1px solid black;
+    grid-column: left-space-start / right-space-end;
+    grid-row: header-start / header-end;
+}
+
+.heading-primary {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+// .header {
+//     background-color: $color-grey-dark-1;
+//     grid-column: full-start / col-end 6;
+//     //background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93));
+//     background-size: cover;
+//     background-position: center;
+//     padding: 8rem;
+//     padding-top: 4rem;
+
+//     display: grid;
+//     grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+//     grid-template-columns: minmax(min-content, max-content);
+//     grid-row-gap: 1.5rem;
+//     justify-content: center;
+
+//     @media only screen and (max-width: $bp-medium) {
+//         grid-column: 1 / -1;
+//     } 
+    
+//     @media only screen and (max-width: $bp-small) {
+//         padding: 5rem;
+//     }
+
+//     &__logo {
+//         height: 3rem;
+//         justify-self: center;
+//     }  
+
+//     &__btn {
+//         // Без этих параметров кнопка растянута на всю высоту строки (row) и выглядит гигантской
+//         align-self: start;
+//         justify-self: start;
+//     }
+
+//     &__seenon-text {
+//         display: grid;
+//         grid-template-columns: 1fr max-content 1fr;
+//         // align-content: center;
+//         // justify-content: center;
+//         grid-column-gap: 1.5rem;
+//         align-items: center;
+
+//         font-size: 1.6rem;
+//         color: $color-grey-light-2;
+
+//         // &::before {
+//         //     content: "";
+//         //     height: 1px;
+//         //     display: block;
+//         //     background-color: currentColor;
+//         // }
+
+//         // &::after {
+//         //     content: "";
+//         //     height: 1px;
+//         //     display: block;
+//         //     background-color: currentColor;
+//         // } 
+        
+//         &::before, 
+//         &::after {
+//             content: "";
+//             height: 1px;
+//             display: block;
+//             background-color: currentColor;
+//         }
+//     } 
+
+//     &__seenon-logos {
+//         //border: 1px solid red;
+//         display: grid;
+//         grid-template-columns: repeat(4, 1fr);
+//         grid-column-gap: 3rem;
+//         justify-items: center;
+//         align-items: center;
+
+//         img {
+//             max-height: 2.5rem;
+//             max-width: 100%;
+//             filter: brightness(70%);
+//         } 
+//     }  
+// }

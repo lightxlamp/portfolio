@@ -1,105 +1,58 @@
-/* https://www.codebeautifier.com/ applied to CSS */
-* {
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #fff; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+*,
+*::before,
+*::after {
   margin: 0;
-  padding: 0; }
-
-header {
-  background-color: white;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.heading-primary {
-  text-align: center; }
-  .heading-primary--main {
-    display: block;
-    animation-name: headerTextAnimation;
-    animation-duration: 1s; }
-  .heading-primary--sub {
-    display: block;
-    animation: headerSubTextAnimation 1s ease-out; }
+  padding: 0;
+  box-sizing: inherit; }
 
 body {
-  background-color: white;
-  font-family: Arial;
-  font-size: 1em; }
+  font-weight: 300;
+  line-height: 1.6; }
 
-#three-sliders-div-wrapper {
-  background-color: #7510f7;
-  padding: 2em 0;
-  width: 100%; }
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: [header-start] 300px [header-end projects-start] 600px [projects-end technologies-start] 300px [technologies-end footer-start] 200px [footer-end];
+  grid-template-columns: [left-space-start] 1fr [left-space-end main-start] 1100px [main-end right-space-start] 1fr [right-space-end]; }
 
-#project-name-slider-div {
-  background-color: black;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: white;
-  margin: auto;
-  max-width: 2905px;
-  padding: 0.8em 0;
-  text-align: center;
-  width: 85%; }
+.header {
+  background-color: #fff;
+  border: 1px solid black;
+  grid-column: left-space-start / right-space-end;
+  grid-row: header-start / header-end; }
 
-#images-slider-div {
-  background-color: black;
-  border: 0.1em solid black;
-  margin: auto;
-  max-width: 2905px;
-  width: 85%; }
+.heading-primary {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; }
 
-#project-details-slider-div {
-  background-color: black;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: white;
-  font-size: 1.2em;
-  margin: auto;
-  max-width: 2905px;
-  padding: 1em 0;
-  text-align: center;
-  width: 85%; }
+.projects {
+  background-color: purple;
+  grid-row: projects-start / projects-end;
+  grid-column: main-start / main-end; }
 
-#project-details-slider-div a {
-  color: #b19cd9;
-  display: block;
-  text-decoration: none; }
+.technologies {
+  background-color: rosybrown;
+  grid-row: technologies-start / technologies-end;
+  grid-column: left-space-start / right-space-end; }
 
-#images-slider-div:hover {
-  cursor: pointer; }
-
-#project-name-slider-div a {
-  color: #b19cd9;
-  text-decoration: none; }
-
-#technologies-slider-wrapper-div {
-  background-color: white;
-  margin: 2rem 0 1rem 0;
-  width: 100%; }
-
-#technologies-slider-div {
-  background-color: white;
-  margin: auto;
-  max-width: 2905px;
-  width: 51%; }
-
-#technologies-slider-div:hover {
-  cursor: pointer; }
-
-footer {
-  font-size: 1.2rem;
-  padding-top: 2rem;
-  text-align: center; }
-
-#headerContent {
-  text-align: center; }
-
-.project-name {
-  font-size: 2em; }
+.footer {
+  background-color: yellowgreen;
+  grid-row: footer-start / footer-end;
+  grid-column: left-space-start / right-space-end; }
 
 @keyframes headerTextAnimation {
   /* ! Browsers are only optimezed to animate opacity and transform properties */
