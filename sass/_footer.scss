@@ -1,5 +1,6 @@
 .footer {
-    background-color: yellowgreen;
+    //background-color: yellowgreen;
     grid-row: footer-start / footer-end;
     grid-column: left-space-start / right-space-end;
+    text-align: center;
 }

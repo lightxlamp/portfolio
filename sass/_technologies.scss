@@ -1,5 +1,12 @@
 .technologies {
-    background-color: rosybrown;
     grid-row: technologies-start / technologies-end;
     grid-column: left-space-start / right-space-end;
+    background-color: #fff;
+    margin: auto;
+    max-width: 2905px;
+    width: 51%;
+}
+
+.technologies:hover {
+    cursor: pointer;
 }
