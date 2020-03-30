@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-rows: [header-start] 300px [header-end projects-start] min-content [projects-end technologies-start] 300px [technologies-end footer-start] min-content [footer-end];
-  grid-template-columns: [left-space-start] 5vw [left-space-end main-start] 90vw [main-end right-space-start] 5vw [right-space-end]; }
+  grid-template-columns: [left-space-start] 5vw [left-space-end main-start] minmax(90vw, 2741px) [main-end right-space-start] 5vw [right-space-end]; }
 
 .header {
   background-color: #fff;
@@ -59,6 +59,7 @@ body {
     border-top-right-radius: 50px;
     box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #fff;
+    max-width: 2741px;
     text-align: center;
     width: 85%;
     height: 50px;
@@ -72,6 +73,7 @@ body {
     background-color: black;
     border: 0.1em solid black;
     margin: auto;
+    max-width: 2741px;
     width: 85%; }
   .project__image:hover {
     cursor: pointer; }
@@ -87,6 +89,7 @@ body {
     padding: 1em 0;
     text-align: center;
     width: 85%;
+    max-width: 2741px;
     font-size: 19px;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif; }

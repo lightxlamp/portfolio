@@ -53,7 +53,9 @@ body{
 
     grid-template-rows: [header-start] 300px [header-end projects-start] min-content [projects-end technologies-start] 300px [technologies-end footer-start]
                         min-content [footer-end];  
-    grid-template-columns: [left-space-start] 5vw [left-space-end main-start] 90vw [main-end right-space-start] 5vw [right-space-end]; 
+    grid-template-columns: [left-space-start] 5vw [left-space-end main-start] minmax(90vw, 2741px) [main-end right-space-start] 5vw [right-space-end]; 
+    //grid-template-columns: [left-space-start] 5vw [left-space-end main-start] minmax(90vw, 2741px) [main-end right-space-start] 5vw [right-space-end]; 
+    // 2741px - fix for 4k monitors.
 
     //grid-template-rows: minmax(min-content, 300px) minmax(min-content, 600px) 20vh 20vh; //1140px / 8 columns ~ 140px = 14rem <3 
     // grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
