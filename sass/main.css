@@ -1,0 +1,250 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: [header-start] 300px [header-end projects-start] min-content [projects-end technologies-start] 300px [technologies-end footer-start] min-content [footer-end];
+      grid-template-rows: [header-start] 300px [header-end projects-start] -webkit-min-content [projects-end technologies-start] 300px [technologies-end footer-start] -webkit-min-content [footer-end];
+      grid-template-rows: [header-start] 300px [header-end projects-start] min-content [projects-end technologies-start] 300px [technologies-end footer-start] min-content [footer-end];
+  -ms-grid-columns: [left-space-start] 5vw [left-space-end main-start] minmax(90vw, 2741px) [main-end right-space-start] 5vw [right-space-end];
+      grid-template-columns: [left-space-start] 5vw [left-space-end main-start] minmax(90vw, 2741px) [main-end right-space-start] 5vw [right-space-end];
+}
+
+.header {
+  background-color: #fff;
+  grid-column: left-space-start / right-space-end;
+  grid-row: header-start / header-end;
+}
+
+.heading-primary {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  text-align: center;
+}
+
+.heading-primary--main {
+  display: block;
+  -webkit-animation-name: headerTextAnimation;
+          animation-name: headerTextAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.heading-primary--sub {
+  display: block;
+  -webkit-animation: headerSubTextAnimation 1s ease-out;
+          animation: headerSubTextAnimation 1s ease-out;
+}
+
+.project {
+  background-color: #7510f7;
+  grid-row: projects-start / projects-end;
+  grid-column: left-space-start / right-space-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.project__name {
+  background-color: black;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  -webkit-box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  max-width: 2741px;
+  text-align: center;
+  width: 85%;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project__name a {
+  color: #b19cd9;
+  text-decoration: none;
+}
+
+.project__image {
+  background-color: black;
+  border: 0.1em solid black;
+  margin: auto;
+  max-width: 2741px;
+  width: 85%;
+}
+
+.project__image:hover {
+  cursor: pointer;
+}
+
+.project__details {
+  background-color: black;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  font-size: 1.2em;
+  margin: auto;
+  max-width: 2905px;
+  padding: 1em 0;
+  text-align: center;
+  width: 85%;
+  max-width: 2741px;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project__details a {
+  color: #b19cd9;
+  display: block;
+  text-decoration: none;
+}
+
+.technologies {
+  grid-row: technologies-start / technologies-end;
+  grid-column: left-space-start / right-space-end;
+  background-color: #fff;
+  margin: auto;
+  max-width: 2905px;
+  width: 51%;
+}
+
+.technologies:hover {
+  cursor: pointer;
+}
+
+.footer {
+  grid-row: footer-start / footer-end;
+  grid-column: left-space-start / right-space-end;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@-webkit-keyframes headerTextAnimation {
+  /* ! Browsers are only optimezed to animate opacity and transform properties */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  30% {
+    opacity: .3;
+  }
+  50% {
+    opacity: .5;
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes headerTextAnimation {
+  /* ! Browsers are only optimezed to animate opacity and transform properties */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  30% {
+    opacity: .3;
+  }
+  50% {
+    opacity: .5;
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes headerSubTextAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes headerSubTextAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
